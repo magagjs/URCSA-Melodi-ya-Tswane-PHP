@@ -1,7 +1,0 @@
-user-agent: googlebot
-disallow: /scripts
-
-sitemap: http://mytchurch.co.za/sitemap.xml
-
-user-agent: *
-disallow: /scripts
