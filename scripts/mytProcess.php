@@ -1,5 +1,6 @@
 <?php 
-	require "../../../config/mytComponents.php";
+	// require "../../../config/mytComponents.php"; // LOCAL ONLY
+	require "../../config/mytComponents.php";
 	
 	// prepare log file
 	global $logFileName, $errPageRedir;	

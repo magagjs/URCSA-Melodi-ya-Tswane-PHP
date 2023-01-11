@@ -1,5 +1,6 @@
 <?php
-	require "../../../config/mytComponents.php";
+	//require "../../../config/mytComponents.php"; // LOCAL ONLY
+	require "../../config/mytComponents.php";
 
 	global $logFileName, $mailForwardRedir, $errPageRedir;
 	$name = $tel = $email = $message = "";				// define form variables for 'Contacts us' form
@@ -58,7 +59,7 @@
 				mytLog('processForward: Could not get url parameters for forward emails');
 		} catch (Exception $e) {
 			mytLog('processForward: Exception in processForward', $e->getMessage());
-			header('Location: ' . $errPageUrl);
+			header('Location: ' . $errPageRedir);
 			exit();
 		}
 		
